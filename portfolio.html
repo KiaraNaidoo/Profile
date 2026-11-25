@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Portfolio | Kiara Naidoo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of Kiara Naidoo - Software Engineer, Full-Stack Developer & IT/OT Specialist based in Durban, South Africa.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Rubik:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <!-- Main Container -->
+  <div class="main-container">
+    <!-- Aside Sidebar -->
+    <aside class="aside" id="aside">
+      <div class="nav-toggler" id="navToggler" aria-label="Toggle Navigation" role="button" tabindex="0">
+        <span></span>
+      </div>
+      <div class="aside-inner">
+        <div class="logo">
+          <a href="index.html">Kiara<span>.</span></a>
+        </div>
+
+        <div class="availability-badge">
+          <span class="pulse-dot"></span> Available for Freelance &amp; Roles
+        </div>
+
+        <ul class="nav">
+          <li><a href="index.html" class=""><i class="fa fa-home"></i> Home</a></li>
+          <li><a href="about.html" class=""><i class="fa fa-user"></i> About & CV</a></li>
+          <li><a href="services.html" class=""><i class="fa fa-list"></i> Services</a></li>
+          <li><a href="portfolio.html" class="active"><i class="fa fa-briefcase"></i> Portfolio</a></li>
+          <li><a href="contact.html" class=""><i class="fa fa-comments"></i> Contact</a></li>
+        </ul>
+
+        <div class="aside-footer">
+          <div class="aside-socials">
+            <a href="https://za.linkedin.com/in/kiara-naidoo-626746286" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+            <a href="mailto:naidookiara325is@gmail.com" aria-label="Email"><i class="fa fa-envelope"></i></a>
+          </div>
+          <div class="copyright-text">
+            &copy; <span id="currentYear">2026</span> KCN &bull; Durban, ZA
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <section class="page-section portfolio-section">
+        <div class="container">
+          <div class="section-title">
+            <h2>Portfolio</h2>
+            <p class="section-subtitle">Selected engineering, web design, data analysis &amp; creative projects</p>
+          </div>
+
+          <div class="portfolio-filter" id="portfolioFilter">
+            <button type="button" class="filter-btn active" data-filter="all">All Projects</button>
+            <button type="button" class="filter-btn" data-filter="web-design">Web Development</button>
+            <button type="button" class="filter-btn" data-filter="data-analysis">Data Analysis</button>
+            <button type="button" class="filter-btn" data-filter="graphic-design">Graphic Design</button>
+          </div>
+
+          <div class="portfolio-grid" id="portfolioGrid">
+            <article class="portfolio-card shadow-dark" data-category="web-design"
+              data-title="Enterprise Lunch Ordering System"
+              data-category-label="Full-Stack Web Development"
+              data-stack="HTML5, CSS3, Bootstrap, Java, PHP, SQL"
+              data-desc="End-to-end internal web application developed to streamline daily staff meal selection, vendor order aggregation, and administrative reporting."
+              data-img="images/project-1.svg">
+              <div class="portfolio-thumb">
+                <img src="images/project-1.svg" alt="Enterprise Lunch Ordering System">
+                <div class="portfolio-overlay">
+                  <span class="overlay-badge">Full-Stack Web</span>
+                  <button type="button" class="view-project-btn"><i class="fa fa-search-plus"></i> View Details</button>
+                </div>
+              </div>
+              <div class="portfolio-card-body">
+                <h4>Enterprise Lunch Ordering System</h4>
+                <p>Full-stack ordering platform built with Bootstrap, PHP, Java &amp; SQL.</p>
+              </div>
+            </article>
+
+            <article class="portfolio-card shadow-dark" data-category="web-design"
+              data-title="Client Profile &amp; User Dashboard Portal"
+              data-category-label="Web Design &amp; Frontend Engineering"
+              data-stack="Wix Studio, JavaScript, Responsive UI"
+              data-desc="Designed and implemented a self-service user profile portal, interactive analytics dashboard, and account update workflow for Significant Consultants."
+              data-img="images/project-2.svg">
+              <div class="portfolio-thumb">
+                <img src="images/project-2.svg" alt="Client Profile & User Dashboard Portal">
+                <div class="portfolio-overlay">
+                  <span class="overlay-badge">Web Design</span>
+                  <button type="button" class="view-project-btn"><i class="fa fa-search-plus"></i> View Details</button>
+                </div>
+              </div>
+              <div class="portfolio-card-body">
+                <h4>Client Profile &amp; User Dashboard</h4>
+                <p>Custom member dashboard and profile management experience.</p>
+              </div>
+            </article>
+
+            <article class="portfolio-card shadow-dark" data-category="data-analysis"
+              data-title="AWS Data Engineering &amp; Analytics Pipeline"
+              data-category-label="Data Analysis &amp; Cloud Foundations"
+              data-stack="AWS Foundations, SQL, Data Modeling"
+              data-desc="Structured ingestion, transformation, and SQL querying workflows inspired by AWS Data Engineering Foundations and Cisco Data Science methodologies."
+              data-img="images/project-3.svg">
+              <div class="portfolio-thumb">
+                <img src="images/project-3.svg" alt="AWS Data Engineering & Analytics Pipeline">
+                <div class="portfolio-overlay">
+                  <span class="overlay-badge">Data Analysis</span>
+                  <button type="button" class="view-project-btn"><i class="fa fa-search-plus"></i> View Details</button>
+                </div>
+              </div>
+              <div class="portfolio-card-body">
+                <h4>Cloud Data &amp; SQL Analytics</h4>
+                <p>Structured data pipelines and operational KPI reporting.</p>
+              </div>
+            </article>
+
+            <article class="portfolio-card shadow-dark" data-category="data-analysis"
+              data-title="IT Incident &amp; SLA Performance Insights"
+              data-category-label="Data Analysis &amp; Operations"
+              data-stack="ServiceNow Data, SQL, Excel/BI"
+              data-desc="Operational tracking and root-cause trend analysis across hardware, software, and Intune rollout milestones to improve resolution turnaround."
+              data-img="images/project-4.svg">
+              <div class="portfolio-thumb">
+                <img src="images/project-4.svg" alt="IT Incident & SLA Performance Insights">
+                <div class="portfolio-overlay">
+                  <span class="overlay-badge">Data Analysis</span>
+                  <button type="button" class="view-project-btn"><i class="fa fa-search-plus"></i> View Details</button>
+                </div>
+              </div>
+              <div class="portfolio-card-body">
+                <h4>IT Operations &amp; SLA Insights</h4>
+                <p>Service-level metrics and rollout progress visualization.</p>
+              </div>
+            </article>
+
+            <article class="portfolio-card shadow-dark" data-category="graphic-design"
+              data-title="Brand Identity &amp; Custom Logo Suite"
+              data-category-label="Graphic Design"
+              data-stack="Vector Branding, Typography, Color Systems"
+              data-desc="Clean, memorable logo marks and visual identity kits created for emerging small businesses and digital creators."
+              data-img="images/project-5.svg">
+              <div class="portfolio-thumb">
+                <img src="images/project-5.svg" alt="Brand Identity & Custom Logo Suite">
+                <div class="portfolio-overlay">
+                  <span class="overlay-badge">Graphic Design</span>
+                  <button type="button" class="view-project-btn"><i class="fa fa-search-plus"></i> View Details</button>
+                </div>
+              </div>
+              <div class="portfolio-card-body">
+                <h4>Brand Identity &amp; Logo Suite</h4>
+                <p>Custom logos and cohesive brand asset packages.</p>
+              </div>
+            </article>
+
+            <article class="portfolio-card shadow-dark" data-category="graphic-design"
+              data-title="Social Media &amp; Event Media Creatives"
+              data-category-label="Graphic &amp; Video Design"
+              data-stack="Digital Ads, Collages, Motion Edits"
+              data-desc="Promotional social media advertisements, tribute slideshows, and event collages designed for high visual engagement."
+              data-img="images/project-6.svg">
+              <div class="portfolio-thumb">
+                <img src="images/project-6.svg" alt="Social Media & Event Media Creatives">
+                <div class="portfolio-overlay">
+                  <span class="overlay-badge">Graphic Design</span>
+                  <button type="button" class="view-project-btn"><i class="fa fa-search-plus"></i> View Details</button>
+                </div>
+              </div>
+              <div class="portfolio-card-body">
+                <h4>Social Media &amp; Event Creatives</h4>
+                <p>Ad banners, event collages, and promotional graphics.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Project Case Study Lightbox -->
+  <div class="modal-backdrop" id="projectModal">
+    <div class="modal-card project-modal-card">
+      <button type="button" class="modal-close-btn floating-close" id="closeProjectModalBtn">&times;</button>
+      <div class="project-modal-media">
+        <img src="" alt="" id="modalProjectImg">
+        <button type="button" class="lightbox-nav prev" id="prevProjectBtn" aria-label="Previous Project"><i class="fa fa-angle-left"></i></button>
+        <button type="button" class="lightbox-nav next" id="nextProjectBtn" aria-label="Next Project"><i class="fa fa-angle-right"></i></button>
+      </div>
+      <div class="project-modal-body">
+        <div class="project-modal-meta">
+          <span class="badge-pill" id="modalProjectCategory"></span>
+          <span class="counter-text" id="modalProjectCounter"></span>
+        </div>
+        <h3 id="modalProjectTitle"></h3>
+        <p id="modalProjectDesc"></p>
+        <div class="tech-stack-row">
+          <strong>Technologies / Focus:</strong> <span id="modalProjectStack"></span>
+        </div>
+        <div class="project-modal-footer">
+          <a href="contact.html" class="btn btn-primary btn-sm">Inquire About Similar Work</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Live Theme & Color Switcher -->
+  <div class="style-switcher" id="styleSwitcher">
+    <button type="button" class="toggle-style-switcher" id="toggleStyleSwitcher" aria-label="Customize Theme">
+      <i class="fa fa-cog fa-spin"></i>
+    </button>
+    <h5>Accent Color</h5>
+    <ul class="color-list">
+      <li><button type="button" class="color-btn active" data-color="pink" style="background-color: #ec1839;" title="Crimson Rose"></button></li>
+      <li><button type="button" class="color-btn" data-color="blue" style="background-color: #2196f3;" title="Electric Blue"></button></li>
+      <li><button type="button" class="color-btn" data-color="green" style="background-color: #28a745;" title="Emerald"></button></li>
+      <li><button type="button" class="color-btn" data-color="orange" style="background-color: #fa5b0f;" title="Sunset Orange"></button></li>
+      <li><button type="button" class="color-btn" data-color="yellow" style="background-color: #e09f00;" title="Amber Gold"></button></li>
+    </ul>
+    <h5>Appearance Mode</h5>
+    <div class="theme-toggle-group">
+      <label class="theme-radio">
+        <input type="radio" name="body-skin" value="light" checked> <span><i class="fa fa-sun-o"></i> Light</span>
+      </label>
+      <label class="theme-radio">
+        <input type="radio" name="body-skin" value="dark"> <span><i class="fa fa-moon-o"></i> Dark</span>
+      </label>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast"></div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

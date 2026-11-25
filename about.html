@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>About & Experience | Kiara Naidoo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of Kiara Naidoo - Software Engineer, Full-Stack Developer & IT/OT Specialist based in Durban, South Africa.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Rubik:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <!-- Main Container -->
+  <div class="main-container">
+    <!-- Aside Sidebar -->
+    <aside class="aside" id="aside">
+      <div class="nav-toggler" id="navToggler" aria-label="Toggle Navigation" role="button" tabindex="0">
+        <span></span>
+      </div>
+      <div class="aside-inner">
+        <div class="logo">
+          <a href="index.html">Kiara<span>.</span></a>
+        </div>
+
+        <div class="availability-badge">
+          <span class="pulse-dot"></span> Available for Freelance &amp; Roles
+        </div>
+
+        <ul class="nav">
+          <li><a href="index.html" class=""><i class="fa fa-home"></i> Home</a></li>
+          <li><a href="about.html" class="active"><i class="fa fa-user"></i> About & CV</a></li>
+          <li><a href="services.html" class=""><i class="fa fa-list"></i> Services</a></li>
+          <li><a href="portfolio.html" class=""><i class="fa fa-briefcase"></i> Portfolio</a></li>
+          <li><a href="contact.html" class=""><i class="fa fa-comments"></i> Contact</a></li>
+        </ul>
+
+        <div class="aside-footer">
+          <div class="aside-socials">
+            <a href="https://za.linkedin.com/in/kiara-naidoo-626746286" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+            <a href="mailto:naidookiara325is@gmail.com" aria-label="Email"><i class="fa fa-envelope"></i></a>
+          </div>
+          <div class="copyright-text">
+            &copy; <span id="currentYear">2026</span> KCN &bull; Durban, ZA
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <section class="page-section about-section">
+        <div class="container">
+          <div class="section-header-flex">
+            <div class="section-title">
+              <h2>About Me</h2>
+              <p class="section-subtitle">Background, technical toolkit, academic credentials &amp; career journey</p>
+            </div>
+            <button type="button" class="btn btn-primary" id="openCvModalBtn">
+              <i class="fa fa-file-text-o"></i> View / Print CV
+            </button>
+          </div>
+
+          <div class="about-bio-card shadow-dark">
+            <h3>I'm Kiara Naidoo, a <span>Software Engineer &amp; IT Specialist</span></h3>
+            <p>
+              I am a passionate, results-driven Software Engineer and IT Project Support specialist with a Bachelor of Science Honours in Information Technology. I enjoy every stage of building reliable systems—from initial stakeholder discovery and database architecture to full-stack web engineering, enterprise device rollouts, and seamless user experiences.
+            </p>
+          </div>
+
+          <!-- Personal Info & Interactive Skills Grid -->
+          <div class="two-col-grid">
+            <div class="card-box shadow-dark">
+              <h3 class="box-heading"><i class="fa fa-id-card-o"></i> Personal Details</h3>
+              <div class="info-grid">
+                <div class="info-item">
+                  <span class="info-label">Birthday</span>
+                  <span class="info-value">9 May 2002</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">Age</span>
+                  <span class="info-value" id="dynamicAge">24</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">Degree</span>
+                  <span class="info-value">BSc Honours in IT</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">City</span>
+                  <span class="info-value">Durban, South Africa</span>
+                </div>
+                <div class="info-item full-span">
+                  <span class="info-label">Email</span>
+                  <span class="info-value">
+                    naidookiara325is@gmail.com
+                    <button type="button" class="mini-copy-btn" data-copy="naidookiara325is@gmail.com" title="Copy Email"><i class="fa fa-clone"></i></button>
+                  </span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">Freelance</span>
+                  <span class="info-value status-available">Available</span>
+                </div>
+              </div>
+              <div class="card-cta-row">
+                <a href="contact.html" class="btn btn-primary">Hire Me</a>
+                <a href="services.html" class="btn btn-outline">My Services</a>
+              </div>
+            </div>
+
+            <!-- Interactive Filterable Skills Matrix -->
+            <div class="card-box shadow-dark">
+              <div class="skills-header">
+                <h3 class="box-heading"><i class="fa fa-code"></i> Technical Skills</h3>
+                <div class="skill-tabs" id="skillTabs">
+                  <button type="button" class="skill-tab active" data-skill-cat="all">All</button>
+                  <button type="button" class="skill-tab" data-skill-cat="dev">Web &amp; Code</button>
+                  <button type="button" class="skill-tab" data-skill-cat="data">Data &amp; Cloud</button>
+                  <button type="button" class="skill-tab" data-skill-cat="it">IT &amp; Ops</button>
+                </div>
+              </div>
+
+              <div class="skills-list" id="skillsList">
+                <div class="skill-item" data-cat="dev">
+                  <div class="skill-meta"><span>HTML5, CSS3 &amp; Bootstrap</span><span>95%</span></div>
+                  <div class="progress"><div class="progress-in" style="width: 95%;"></div></div>
+                </div>
+                <div class="skill-item" data-cat="dev">
+                  <div class="skill-meta"><span>JavaScript &amp; Frontend UI</span><span>88%</span></div>
+                  <div class="progress"><div class="progress-in" style="width: 88%;"></div></div>
+                </div>
+                <div class="skill-item" data-cat="dev">
+                  <div class="skill-meta"><span>PHP &amp; Java Full-Stack</span><span>85%</span></div>
+                  <div class="progress"><div class="progress-in" style="width: 85%;"></div></div>
+                </div>
+                <div class="skill-item" data-cat="data">
+                  <div class="skill-meta"><span>SQL Database Design &amp; Querying</span><span>90%</span></div>
+                  <div class="progress"><div class="progress-in" style="width: 90%;"></div></div>
+                </div>
+                <div class="skill-item" data-cat="data">
+                  <div class="skill-meta"><span>AWS Data Engineering &amp; Data Science</span><span>80%</span></div>
+                  <div class="progress"><div class="progress-in" style="width: 80%;"></div></div>
+                </div>
+                <div class="skill-item" data-cat="it">
+                  <div class="skill-meta"><span>Windows 11 Intune, ServiceNow &amp; IT/OT</span><span>92%</span></div>
+                  <div class="progress"><div class="progress-in" style="width: 92%;"></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education & Experience Timelines -->
+          <div class="two-col-grid timeline-grid">
+            <!-- Education -->
+            <div>
+              <h3 class="column-title"><i class="fa fa-graduation-cap"></i> Education &amp; Certifications</h3>
+              <div class="timeline shadow-dark">
+                <div class="timeline-item">
+                  <div class="circle-dot"></div>
+                  <h6 class="timeline-date"><i class="fa fa-calendar"></i> 2024 – 2025</h6>
+                  <h4 class="timeline-title">Richfield Graduate Institute</h4>
+                  <p class="timeline-text">Bachelor of Science Honours in Information Technology</p>
+                </div>
+                <div class="timeline-item">
+                  <div class="circle-dot"></div>
+                  <h6 class="timeline-date"><i class="fa fa-calendar"></i> 2025</h6>
+                  <h4 class="timeline-title">AWS Training and Certification</h4>
+                  <p class="timeline-text">Data Engineering on AWS – Foundations</p>
+                </div>
+                <div class="timeline-item">
+                  <div class="circle-dot"></div>
+                  <h6 class="timeline-date"><i class="fa fa-calendar"></i> 2024</h6>
+                  <h4 class="timeline-title">Cisco Networking Academy</h4>
+                  <p class="timeline-text">Introduction to Data Science</p>
+                </div>
+                <div class="timeline-item">
+                  <div class="circle-dot"></div>
+                  <h6 class="timeline-date"><i class="fa fa-calendar"></i> 2023 – 2024</h6>
+                  <h4 class="timeline-title">TEFL Professional Institute : Teacher Record</h4>
+                  <p class="timeline-text">Teaching English as a Foreign Language (TEFL Certified)</p>
+                </div>
+                <div class="timeline-item">
+                  <div class="circle-dot"></div>
+                  <h6 class="timeline-date"><i class="fa fa-calendar"></i> 2021 – 2023</h6>
+                  <h4 class="timeline-title">Richfield Graduate Institute</h4>
+                  <p class="timeline-text">Bachelor of Science Degree in Information Technology</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Experience -->
+            <div>
+              <h3 class="column-title"><i class="fa fa-briefcase"></i> Work Experience</h3>
+              <div class="timeline shadow-dark">
+                <div class="timeline-item">
+                  <div class="circle-dot"></div>
+                  <h6 class="timeline-date"><i class="fa fa-calendar"></i> March 2025 – Current</h6>
+                  <h4 class="timeline-title">IT Project Support</h4>
+                  <ul class="timeline-bullets">
+                    <li>Spearheading Windows 11 Intune Rollout and enterprise biometric access control integration with MyPulse.</li>
+                    <li>Developed full-stack Lunch Ordering System web application (HTML, CSS, Bootstrap, Java, PHP, SQL).</li>
+                    <li>Diagnose and resolve Windows OS, application, and network incidents via ServiceNow while monitoring backup/replication services.</li>
+                    <li>Coordinate on-site IT contractors and manage hardware/software upgrades across workstations and peripherals.</li>
+                  </ul>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="circle-dot"></div>
+                  <h6 class="timeline-date"><i class="fa fa-calendar"></i> March 2024 – February 2025</h6>
+                  <h4 class="timeline-title">IT/OT Graduate &bull; Vopak</h4>
+                  <ul class="timeline-bullets">
+                    <li>Built and deployed an internal Lunch Ordering System website for staff.</li>
+                    <li>Maintained servers, virtual machines, data storage, backup replication, routers, switches, and backend services.</li>
+                    <li>Delivered full lifecycle support for local IT &amp; Automation projects, testing, and after-hours standby operations.</li>
+                    <li>Monitored vendor SLAs, coordinated contractors, and resolved ServiceNow incidents to restore service rapidly.</li>
+                  </ul>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="circle-dot"></div>
+                  <h6 class="timeline-date"><i class="fa fa-calendar"></i> January 2024 – February 2024</h6>
+                  <h4 class="timeline-title">Web Developer &bull; Significant Consultants</h4>
+                  <ul class="timeline-bullets">
+                    <li>Designed, coded, and implemented interactive user profile pages, user dashboards, and profile update portals using Wix Studio and JavaScript.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Printable CV Modal -->
+  <div class="modal-backdrop" id="cvModal">
+    <div class="modal-card cv-modal-card">
+      <div class="modal-header no-print">
+        <h3><i class="fa fa-file-text-o"></i> Curriculum Vitae Preview</h3>
+        <div class="modal-header-actions">
+          <button type="button" class="btn btn-primary btn-sm" onclick="window.print()"><i class="fa fa-print"></i> Print / Save PDF</button>
+          <button type="button" class="modal-close-btn" id="closeCvModalBtn">&times;</button>
+        </div>
+      </div>
+      <div class="cv-document">
+        <div class="cv-doc-header">
+          <div>
+            <h2>Kiara Naidoo</h2>
+            <p class="cv-role">Software Engineer &bull; Full-Stack Developer &bull; IT/OT Specialist</p>
+          </div>
+          <div class="cv-contact-meta">
+            <p>Durban, South Africa</p>
+            <p>naidookiara325is@gmail.com</p>
+            <p>linkedin.com/in/kiara-naidoo-626746286</p>
+          </div>
+        </div>
+        <div class="cv-section">
+          <h4>Summary</h4>
+          <p>BSc Honours in IT graduate with hands-on experience in full-stack web development (HTML, CSS, Bootstrap, JavaScript, PHP, Java, SQL), enterprise Windows 11 Intune rollouts, biometric access control integrations, and IT/OT infrastructure operations.</p>
+        </div>
+        <div class="cv-section">
+          <h4>Experience</h4>
+          <p><strong>IT Project Support</strong> (Mar 2025 – Present) — Windows 11 Intune Rollout, MyPulse Biometric Access Control integration, full-stack Lunch Ordering System, ServiceNow incident management.</p>
+          <p><strong>IT/OT Graduate — Vopak</strong> (Mar 2024 – Feb 2025) — Server/VM/network maintenance, backup replication, IT/Automation testing &amp; standby support, internal web development.</p>
+          <p><strong>Web Developer — Significant Consultants</strong> (Jan 2024 – Feb 2024) — Custom user profiles, dashboards, and update flows in Wix Studio &amp; JavaScript.</p>
+        </div>
+        <div class="cv-section">
+          <h4>Education &amp; Certifications</h4>
+          <p><strong>BSc Honours in Information Technology</strong> — Richfield Graduate Institute (2024 – 2025)</p>
+          <p><strong>BSc in Information Technology</strong> — Richfield Graduate Institute (2021 – 2023)</p>
+          <p><strong>Certifications:</strong> Data Engineering on AWS – Foundations (2025) &bull; Cisco Intro to Data Science (2024) &bull; TEFL Certified (2024)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Live Theme & Color Switcher -->
+  <div class="style-switcher" id="styleSwitcher">
+    <button type="button" class="toggle-style-switcher" id="toggleStyleSwitcher" aria-label="Customize Theme">
+      <i class="fa fa-cog fa-spin"></i>
+    </button>
+    <h5>Accent Color</h5>
+    <ul class="color-list">
+      <li><button type="button" class="color-btn active" data-color="pink" style="background-color: #ec1839;" title="Crimson Rose"></button></li>
+      <li><button type="button" class="color-btn" data-color="blue" style="background-color: #2196f3;" title="Electric Blue"></button></li>
+      <li><button type="button" class="color-btn" data-color="green" style="background-color: #28a745;" title="Emerald"></button></li>
+      <li><button type="button" class="color-btn" data-color="orange" style="background-color: #fa5b0f;" title="Sunset Orange"></button></li>
+      <li><button type="button" class="color-btn" data-color="yellow" style="background-color: #e09f00;" title="Amber Gold"></button></li>
+    </ul>
+    <h5>Appearance Mode</h5>
+    <div class="theme-toggle-group">
+      <label class="theme-radio">
+        <input type="radio" name="body-skin" value="light" checked> <span><i class="fa fa-sun-o"></i> Light</span>
+      </label>
+      <label class="theme-radio">
+        <input type="radio" name="body-skin" value="dark"> <span><i class="fa fa-moon-o"></i> Dark</span>
+      </label>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast"></div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

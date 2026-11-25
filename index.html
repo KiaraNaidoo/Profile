@@ -1,546 +1,145 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
-  <title>Kiara</title>
+  <title>Home | Kiara Naidoo</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Template css Files -->
-  <link rel="stylesheet" href="css/style.css" type="text/css">
-
-  <!-- Live Style Switcher - Demo Only -->
-  <link rel="stylesheet" class="alternate-style" title="pink" href="css/skins/pink.css" type="text/css">
-  <link rel="stylesheet" class="alternate-style" title="blue" href="css/skins/blue.css" type="text/css" disabled>
-  <link rel="stylesheet" class="alternate-style" title="green" href="css/skins/green.css" type="text/css" disabled>
-  <link rel="stylesheet" class="alternate-style" title="orange" href="css/skins/orange.css" type="text/css" disabled>
-  <link rel="stylesheet" class="alternate-style" title="yellow" href="css/skins/yellow.css" type="text/css" disabled>
-  <link rel="stylesheet" href="css/styleSwitcher.css" type="text/css">
+  <meta name="description" content="Portfolio of Kiara Naidoo - Software Engineer, Full-Stack Developer & IT/OT Specialist based in Durban, South Africa.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Rubik:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-  <!-- Preloader -->
-  <div class="preloader">
-    <div class="loader">
-
-    </div>
-  </div>
-  <!-- Preloader End -->
+  <!-- Mobile Nav Overlay -->
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
 
   <!-- Main Container -->
   <div class="main-container">
-    <!-- Aside -->
-    <div class="aside">
-      <!-- Nav Toggler Btn -->
-      <div class="nav-toggler">
+    <!-- Aside Sidebar -->
+    <aside class="aside" id="aside">
+      <div class="nav-toggler" id="navToggler" aria-label="Toggle Navigation" role="button" tabindex="0">
         <span></span>
       </div>
       <div class="aside-inner">
-        <!-- Logo -->
         <div class="logo">
-          <a href="#">Kiara</a>
+          <a href="index.html">Kiara<span>.</span></a>
         </div>
-        <!-- Nav -->
+
+        <div class="availability-badge">
+          <span class="pulse-dot"></span> Available for Freelance &amp; Roles
+        </div>
+
         <ul class="nav">
-          <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
-          <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
-          <li><a href="#services"><i class="fa fa-list"></i> Services</a></li>
-          <li><a href="#contact"><i class="fa fa-comments"></i> Contact</a></li>
+          <li><a href="index.html" class="active"><i class="fa fa-home"></i> Home</a></li>
+          <li><a href="about.html" class=""><i class="fa fa-user"></i> About & CV</a></li>
+          <li><a href="services.html" class=""><i class="fa fa-list"></i> Services</a></li>
+          <li><a href="portfolio.html" class=""><i class="fa fa-briefcase"></i> Portfolio</a></li>
+          <li><a href="contact.html" class=""><i class="fa fa-comments"></i> Contact</a></li>
         </ul>
-        <!-- Copyright -->
-        <div class="copyright-text">
-          &copy; KCN
+
+        <div class="aside-footer">
+          <div class="aside-socials">
+            <a href="https://za.linkedin.com/in/kiara-naidoo-626746286" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+            <a href="mailto:naidookiara325is@gmail.com" aria-label="Email"><i class="fa fa-envelope"></i></a>
+          </div>
+          <div class="copyright-text">
+            &copy; <span id="currentYear">2026</span> KCN &bull; Durban, ZA
+          </div>
         </div>
       </div>
-    </div>
-    <!-- Aside End -->
+    </aside>
+
     <!-- Main Content -->
-    <div class="main-content">
-
-      <!-- Home Section -->
-      <section class="home section active" id="home">
+    <main class="main-content">
+      <section class="page-section home-section">
         <div class="container">
-          <div class="intro">
-            <img src="images/about.jpg" alt="profile" class="shadow-dark">
-            <h1>Kiara Naidoo</h1>
-            <span class="iTyped"></span>
+          <div class="hero-card shadow-dark">
+            <div class="hero-avatar-wrapper">
+              <!-- Replace images/about.svg with your own images/about.jpg if desired -->
+              <img src="images/about.svg" alt="Kiara Naidoo Profile" class="hero-avatar">
+              <span class="status-indicator" title="Active & Available"></span>
+            </div>
+
+            <p class="hero-greeting">Hello, I'm</p>
+            <h1 class="hero-name">Kiara Naidoo</h1>
+            <div class="typing-wrapper">
+              <span id="typedText" class="typed-text"></span><span class="ityped-cursor">|</span>
+            </div>
+
+            <p class="hero-summary">
+              BSc Honours in IT graduate &amp; Software Engineer in Durban, South Africa. Bridging full-stack web development, SQL data engineering, and enterprise IT/OT infrastructure.
+            </p>
+
+            <div class="hero-stats">
+              <div class="stat-pill">
+                <strong>BSc (Hons)</strong>
+                <span>Information Technology</span>
+              </div>
+              <div class="stat-pill">
+                <strong>AWS &amp; Cisco</strong>
+                <span>Data &amp; Cloud Certified</span>
+              </div>
+              <div class="stat-pill">
+                <strong>Full-Stack &amp; IT/OT</strong>
+                <span>Web, SQL &amp; Enterprise Rollouts</span>
+              </div>
+            </div>
+
+            <div class="hero-actions">
+              <a href="portfolio.html" class="btn btn-primary"><i class="fa fa-briefcase"></i> Explore Portfolio</a>
+              <a href="about.html" class="btn btn-outline"><i class="fa fa-user"></i> About &amp; Experience</a>
+              <a href="contact.html" class="btn btn-outline"><i class="fa fa-paper-plane"></i> Hire Me</a>
+            </div>
+
             <div class="social-links">
-              <a href="https://za.linkedin.com/in/kiara-naidoo-626746286"><i class="fa fa-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Home Section End -->
-
-      <!-- About Section -->
-      <section class="about section" id="about">
-        <div class="container">
-          <div class="row">
-            <div class="section-title padd-15">
-              <h2>About Me</h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="about-content padd-15">
-              <div class="row">
-                <div class="about-text padd-15">
-                  <h3>I'm Kiara Naidoo and i am a <span>Software Engineer</span></h3>
-                  <p>Hi! My name is Kiara Naidoo. I am a Software Engineer, and I'm very passionate and dedicated
-                    to my work. I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration. </p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="personal-info padd-15">
-                  <div class="row">
-                    <div class="info-item padd-15">
-                      <p>Birthday : <span>9 May 2002</span></p>
-                    </div>
-                    <div class="info-item padd-15">
-                      <p>Age : <span>22</span></p>
-                    </div>
-                    <div class="info-item padd-15">
-                      <p>Email : <span>naidookiara325is@gmail.com</span></p>
-                    </div>
-                    <div class="info-item padd-15">
-                      <p>Degree : <span>BscH in IT</span></p>
-                    </div>
-                    <div class="info-item padd-15">
-                      <p>City : <span>Durban</span></p>
-                    </div>
-                    <div class="info-item padd-15">
-                      <p>Freelance : <span>Available</span></p>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="buttons padd-15">
-                      <a href="#contact" data-section-index="1" class="btn hire-me">Hire me</a>
-                    </div>
-                  </div>
-                </div>
-                              </div>
-
-              <div class="row">
-                <div class="education padd-15">
-                  <h3 class="title">Education</h3>
-                  <div class="row">
-                    <div class="timeline-box padd-15">
-                      <div class="timeline shadow-dark">
-                        <!-- timeline Item -->
-                        <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h6 class="timeline-date"><i class="fa fa-calendar"></i> 2024 - 2025</h6>
-                          <h4 class="timeline-title">Studied At Richfield Graduate Institute</h4>
-                          <p class="timeline-text">Bachelor of science Honours in Information Technology</p>
-                        </div>
-                        <!-- timeline Item End -->
-                        <!-- timeline Item -->
-                        <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h6 class="timeline-date"><i class="fa fa-calendar"></i> 2021 - 2023</h6>
-                          <h4 class="timeline-title">Studied At Richfield Graduate Institute </h4>
-                          <p class="timeline-text">Bachelor of science Degree in Information Technology</p>
-                        </div>
-                        <!-- timeline Item End -->
-						<div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h6 class="timeline-date"><i class="fa fa-calendar"></i> 2024 - 2024</h6>
-                          <h4 class="timeline-title">Cisco Networking Academy</h4>
-                          <p class="timeline-text">Introduction to data science</p>
-                        </div>
-						<div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h6 class="timeline-date"><i class="fa fa-calendar"></i> 2025 - 2025</h6>
-                          <h4 class="timeline-title">AWS Training and Certification </h4>
-                          <p class="timeline-text">Data Engineering on AWS - Foundations</p>
-                        </div>
-						<div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h6 class="timeline-date"><i class="fa fa-calendar"></i> 2023 - 2024</h6>
-                          <h4 class="timeline-title">TEFL Professional Institute : Teacher Record </h4>
-                          <p class="timeline-text">Teaching English as a Foreign Language </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="experience padd-15">
-                  <h3 class="title">Experience</h3>
-                  <div class="row">
-                    <div class="timeline-box padd-15">
-                      <div class="timeline shadow-dark">
-                        <!-- timeline Item -->
-                        <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h6 class="timeline-date"><i class="fa fa-calendar"></i> January 2024 - February 2024</h6>
-                          <h4 class="timeline-title">Web Developer : Significant Consultants</h4>
-                          <p class="timeline-text">Web development and designing of website pages using
-• Wix Studio and javascript for coding.
-• Design, coding and implementation of a profile page for
-a user
-• Design, coding and implementation of a user dashboard
-• Design, coding and implementation of an update page
-for a user</p>
-                        </div>
-                        <!-- timeline Item End -->
-                        <!-- timeline Item -->
-                        <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h6 class="timeline-date"><i class="fa fa-calendar"></i> March 2024 - February 2025 </h6>
-                          <h4 class="timeline-title">IT/OT Graduate : Vopak</h4>
-                          <p class="timeline-text">Diagnose and resolve software and hardware incidents,
-including operating systems (Windows) and across a
-range of software applications.
-• Troubleshoot and diagnose network problems
-• Monitor backup and replication services
-• Assist all our users with any logged IT related incident
-when called upon
-• Responsible for problem analysis to implement
-temporary or permanent fixes with the aim of restoring
-service to the customer as soon as possible; escalating
-incidents to application consultants
-• Accurately record, update and document requests using
-the Service-Now incident reporting tool
-• Install and configure new IT equipment, resolve
-incidents and upgrade different types of software and
-hardware, coupled with the supporting equipment,
-namely printers, copiers and scanners, etc.
-• Maintain a first class level of customer service ensuring
-that all staff and external customers are treated
-efficiently and in an appropriate manner
-• Maintain excellent verbal communication skills with the
-ability to communicate effectively with technical and
-non-technical colleagues at all levels in the organization
-• Responsible to liaise with IT contractors when their
-services are required on site
-• Monitor and facilitate service level agreements with IT
-service providers
-• Assist with managing IT contractors that come on to site
-to execute work
-• Maintain Servers, virtual machines, data storage and
-backup replication, Routers, Switches and all back end
-services
-• Support the full life cycle of local business applications
-and hardware
-• Assisting in managing IT & Automation projects as well
-as development & testing
-• Provide IT & Automation afterhours standby support
-• Developed Lunch Ordering System Website</p>
-                        </div>
-                        <!-- timeline Item End -->
-                        <!-- timeline Item -->
-                        <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h6 class="timeline-date"><i class="fa fa-calendar"></i> March 2025 - Current </h6>
-                          <h4 class="timeline-title">IT Project Support</h4>
-                          <p class="timeline-text">Windows 11 Intune Rollout
-• Access control Biometrics
-• Access control integration with MyPulse
-• Lunch Ordering System (Website : HTML, CSS,
-BOOTSTRAP, JAVA, PHP , SQL )
-• Diagnose and resolve software and hardware incidents,
-including operating systems (Windows) and across a
-range of software applications.
-• Troubleshoot and diagnose network problems
-• Monitor backup and replication services
-• Assist all our users with any logged IT related incident
-when called upon
-• Responsible for problem analysis to implement
-temporary or permanent fixes with the aim of restoring
-service to the customer as soon as possible; escalating
-incidents to application consultants
-• Accurately record, update and document requests using
-the Service-Now incident reporting tool
-• Install and configure new IT equipment, resolve
-incidents and upgrade different types of software and
-hardware, coupled with the supporting equipment,
-namely printers, copiers and scanners, etc.
-• Assist with managing IT contractors that come on to site
-to execute work</p>
-                        </div>
-                        <!-- timeline Item End -->
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- About Section End -->
-
-      <!-- Service Section -->
-      <section class="service section" id="services">
-        <div class="container">
-          <div class="row">
-            <div class="section-title padd-15">
-              <h2>Services</h2>
-            </div>
-          </div>
-          <div class="row">
-            <!-- Service item -->
-            <div class="service-item padd-15">
-              <div class="service-item-inner">
-                <div class="icon"><i class="fa fa-laptop"></i></div>
-                <h4>Web Design</h4>
-                <p>Front end design of websites</p>
-              </div>
-            </div>
-            <!-- Service item End -->
-            <!-- Service item -->
-            <div class="service-item padd-15">
-              <div class="service-item-inner">
-                <div class="icon"><i class="fa fa-photo"></i></div>
-                <h4>TEFL</h4>
-                <p>Teaching English as a foreign language</p>
-              </div>
-            </div>
-            <!-- Service item End -->
-            <!-- Service item -->
-            <div class="service-item padd-15">
-              <div class="service-item-inner">
-                <div class="icon"><i class="fa fa-code"></i></div>
-                <h4>Web Development</h4>
-                <p>Full Stack development , both front and back end solutions</p>
-              </div>
-            </div>
-            <!-- Service item End -->
-            <!-- Service item -->
-            <div class="service-item padd-15">
-              <div class="service-item-inner">
-                <div class="icon"><i class="fa fa-film"></i></div>
-                <h4>Video Editing</h4>
-                <p>Video editing for games , slideshows for reunions, funerals, editing videos for advertisement purposes and social media</p>
-              </div>
-            </div>
-            <!-- Service item End -->
-            <!-- Service item -->
-            <div class="service-item padd-15">
-              <div class="service-item-inner">
-                <div class="icon"><i class="fa fa-rocket"></i></div>
-                <h4>Database design</h4>
-                <p>SQL database design and development</p>
-              </div>
-            </div>
-            <!-- Service Item End -->
-            <!-- Service Item -->
-            <div class="service-item padd-15">
-              <div class="service-item-inner">
-                <div class="icon"><i class="fa fa-paint-brush"></i></div>
-                <h4>Logo Design</h4>
-                <p>Basic Graphic Design for advertisements, collages , LOGO's, etc</p>
-              </div>
-            </div>
-            <!-- Service item End -->
-          </div>
-        </div>
-      </section>
-      <!-- Service Section End -->
-
-      <!-- Portfolio Section -->
-       <section class="portfolio section" id="portfolio">
-        <div class="container">
-          <div class="row">
-            <div class="section-title padd-15">
-              <h2>Portfolio</h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="portfolio-filter padd-15">
-              <button type="button" class="active" data-filter="all">All</button>
-              <button type="button" data-filter="web-design">Web Design</button>
-              <button type="button" data-filter="photography">Graphic Design</button>
-              <button type="button" data-filter="wordpress">Data Analysis</button>
-            </div>
-          </div>
-          <div class="row">
-            <!-- Portfolio Item -->
-            <div class="portfolio-item padd-15" data-category="web-design">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                  <img src="images/portfolio/1.jpg" alt="Web Design">
-                </div>
-                <div class="portfolio-info">
-                  <h4>Web Design</h4>
-                  <div class="icon">
-                    <i class="fa fa-search"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Portfolio Item End -->
-            <!-- Portfolio Item -->
-            <div class="portfolio-item padd-15" data-category="photography">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                  <img src="images/portfolio/2.jpg" alt="Photography">
-                </div>
-                <div class="portfolio-info">
-                  <h4>Graphic Design</h4>
-                  <div class="icon">
-                    <i class="fa fa-search"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Portfolio Item End -->
-            <!-- Portfolio Item -->
-            <div class="portfolio-item padd-15" data-category="wordpress">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                  <img src="images/portfolio/3.jpg" alt="Wordpress">
-                </div>
-                <div class="portfolio-info">
-                  <h4>Data Analysis</h4>
-                  <div class="icon">
-                    <i class="fa fa-search"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Portfolio Item End -->
-            <!-- Portfolio Item -->
-            <div class="portfolio-item padd-15" data-category="web-design">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                  <img src="images/portfolio/4.jpg" alt="portfolio">
-                </div>
-                <div class="portfolio-info">
-                  <h4>Web Design</h4>
-                  <div class="icon">
-                    <i class="fa fa-search"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Portfolio Item End -->
-            <!-- Portfolio Item -->
-            <div class="portfolio-item padd-15" data-category="wordpress">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                  <img src="images/portfolio/5.jpg" alt="Wordpress">
-                </div>
-                <div class="portfolio-info">
-                  <h4>Data Analysis</h4>
-                  <div class="icon">
-                    <i class="fa fa-search"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Portfolio Item End -->
-            <!-- Portfolio Item -->
-            <div class="portfolio-item padd-15" data-category="photography">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                  <img src="images/portfolio/6.jpg" alt="Wordpress">
-                </div>
-                <div class="portfolio-info">
-                  <h4>Graphic Design</h4>
-                  <div class="icon">
-                    <i class="fa fa-search"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Portfolio Item End -->
-          </div>
-        </div>
-      </section>
-      <!-- Portfolio Section End -->
-
-      <!-- Blog Section -->
-      
-      <!-- Blog Section End -->
-
-      <!-- Contact Section -->
-      <section class="contact section" id="contact">
-        <div class="container">
-          <div class="row">
-            <div class="section-title padd-15">
-              <h2>Contact Me</h2>
-            </div>
-          </div>
-          <div class="row">
-            <!-- contact-info-item  -->
-            <div class="contact-info-item padd-15">
-              <div class="icon">
-                <i class="fa fa-map-marker"></i>
-                <h4>Office</h4>
-                <p>Durban , South Africa</p>
-              </div>
-            </div>
-            <!-- contact-info-item end -->
-            <!-- contact-info-item  -->
-            <div class="contact-info-item padd-15">
-              <div class="icon">
+              <a href="https://za.linkedin.com/in/kiara-naidoo-626746286" target="_blank" rel="noopener noreferrer" title="LinkedIn Profile">
+                <i class="fa fa-linkedin"></i>
+              </a>
+              <a href="mailto:naidookiara325is@gmail.com" title="Send Email">
                 <i class="fa fa-envelope"></i>
-                <h4>Email</h4>
-                <p>naidookiara325is@gmail</p>
-              </div>
+              </a>
+              <button type="button" class="icon-action-btn" id="copyEmailHero" title="Copy Email Address">
+                <i class="fa fa-clone"></i>
+              </button>
             </div>
-            <!-- contact-info-item end -->
           </div>
-
-          <!-- Contact Form -->
-
-          <!-- Contact Form End -->
         </div>
       </section>
-      <!-- Contact Section End -->
-
-    </div>
-    <!-- Main Content End -->
+    </main>
   </div>
-  <!-- Main Container End -->
 
-  <!-- Lightbox -->
-  <div class="lightbox">
-    <div class="lightbox-content">
-      <div class="lightbox-close">&times;</div>
-      <img src="" alt="" onclick="nextItem()" class="lightbox-img">
-      <div class="lightbox-caption">
-        <div class="caption-text"></div>
-        <div class="caption-counter"></div>
-      </div>
-    </div>
-    <div class="lightbox-controls">
-      <div class="prev-item" onclick="prevItem()"><i class="fa fa-angle-left"></i></div>
-      <div class="next-item" onclick="nextItem()"><i class="fa fa-angle-right"></i></div>
-    </div>
-  </div>
-  <!-- Lightbox End -->
 
-  <!-- Live Style Switcher - Demo Only -->
-  <div class="style-switcher">
-    <div class="toggle-style-switcher">
+
+  <!-- Live Theme & Color Switcher -->
+  <div class="style-switcher" id="styleSwitcher">
+    <button type="button" class="toggle-style-switcher" id="toggleStyleSwitcher" aria-label="Customize Theme">
       <i class="fa fa-cog fa-spin"></i>
-    </div>
-    <h5>Style Switcher</h5>
-    <ul>
-      <li><a href="javascript:void(0);" title="pink" style="background-color: #ec1839;" onclick="setActiveStyle('pink')"></a></li>
-      <li><a href="javascript:void(0);" title="blue" style="background-color: #2196f3;" onclick="setActiveStyle('blue')"></a></li>
-      <li><a href="javascript:void(0);" title="orange" style="background-color: #fa5b0f;" onclick="setActiveStyle('orange')"></a></li>
-      <li><a href="javascript:void(0);" title="yellow" style="background-color: #ffb400;" onclick="setActiveStyle('yellow')"></a></li>
-      <li><a href="javascript:void(0);" title="green" style="background-color: #72b626;" onclick="setActiveStyle('green')"></a></li>
+    </button>
+    <h5>Accent Color</h5>
+    <ul class="color-list">
+      <li><button type="button" class="color-btn active" data-color="pink" style="background-color: #ec1839;" title="Crimson Rose"></button></li>
+      <li><button type="button" class="color-btn" data-color="blue" style="background-color: #2196f3;" title="Electric Blue"></button></li>
+      <li><button type="button" class="color-btn" data-color="green" style="background-color: #28a745;" title="Emerald"></button></li>
+      <li><button type="button" class="color-btn" data-color="orange" style="background-color: #fa5b0f;" title="Sunset Orange"></button></li>
+      <li><button type="button" class="color-btn" data-color="yellow" style="background-color: #e09f00;" title="Amber Gold"></button></li>
     </ul>
-    <h5>Body Skin</h5>
-    <label>
-      <input type="radio" class="body-skin" name="body-skin" value="light" checked="true"> Light
-    </label>
-    <label>
-      <input type="radio" class="body-skin" name="body-skin" value="dark"> Dark
-    </label>
+    <h5>Appearance Mode</h5>
+    <div class="theme-toggle-group">
+      <label class="theme-radio">
+        <input type="radio" name="body-skin" value="light" checked> <span><i class="fa fa-sun-o"></i> Light</span>
+      </label>
+      <label class="theme-radio">
+        <input type="radio" name="body-skin" value="dark"> <span><i class="fa fa-moon-o"></i> Dark</span>
+      </label>
+    </div>
   </div>
-  <!-- Live Style Switcher - Demo Only End -->
 
-  <!-- Plugins -->
-  <script src="js/ityped.min.js"></script>
-  <!-- Template js -->
+  <!-- Toast Notification -->
+  <div class="toast" id="toast"></div>
+
   <script src="js/script.js"></script>
-  <!-- Live Style Js - Demo Only -->
-  <script src="js/styleSwitcher.js"></script>
 </body>
-
 </html>

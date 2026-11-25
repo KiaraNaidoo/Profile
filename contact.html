@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contact | Kiara Naidoo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of Kiara Naidoo - Software Engineer, Full-Stack Developer & IT/OT Specialist based in Durban, South Africa.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Rubik:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <!-- Main Container -->
+  <div class="main-container">
+    <!-- Aside Sidebar -->
+    <aside class="aside" id="aside">
+      <div class="nav-toggler" id="navToggler" aria-label="Toggle Navigation" role="button" tabindex="0">
+        <span></span>
+      </div>
+      <div class="aside-inner">
+        <div class="logo">
+          <a href="index.html">Kiara<span>.</span></a>
+        </div>
+
+        <div class="availability-badge">
+          <span class="pulse-dot"></span> Available for Freelance &amp; Roles
+        </div>
+
+        <ul class="nav">
+          <li><a href="index.html" class=""><i class="fa fa-home"></i> Home</a></li>
+          <li><a href="about.html" class=""><i class="fa fa-user"></i> About & CV</a></li>
+          <li><a href="services.html" class=""><i class="fa fa-list"></i> Services</a></li>
+          <li><a href="portfolio.html" class=""><i class="fa fa-briefcase"></i> Portfolio</a></li>
+          <li><a href="contact.html" class="active"><i class="fa fa-comments"></i> Contact</a></li>
+        </ul>
+
+        <div class="aside-footer">
+          <div class="aside-socials">
+            <a href="https://za.linkedin.com/in/kiara-naidoo-626746286" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+            <a href="mailto:naidookiara325is@gmail.com" aria-label="Email"><i class="fa fa-envelope"></i></a>
+          </div>
+          <div class="copyright-text">
+            &copy; <span id="currentYear">2026</span> KCN &bull; Durban, ZA
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <section class="page-section contact-section">
+        <div class="container">
+          <div class="section-title">
+            <h2>Contact Me</h2>
+            <p class="section-subtitle">Have a project in mind or want to connect? Send a message directly below</p>
+          </div>
+
+          <div class="contact-cards-grid">
+            <div class="contact-card shadow-dark">
+              <div class="contact-icon"><i class="fa fa-map-marker"></i></div>
+              <h4>Location</h4>
+              <p>Durban, KwaZulu-Natal, South Africa</p>
+            </div>
+
+            <div class="contact-card shadow-dark">
+              <div class="contact-icon"><i class="fa fa-envelope"></i></div>
+              <h4>Email Address</h4>
+              <p>
+                <a href="mailto:naidookiara325is@gmail.com">naidookiara325is@gmail.com</a>
+              </p>
+              <button type="button" class="mini-copy-btn" data-copy="naidookiara325is@gmail.com">
+                <i class="fa fa-clone"></i> Copy Email
+              </button>
+            </div>
+
+            <div class="contact-card shadow-dark">
+              <div class="contact-icon"><i class="fa fa-linkedin"></i></div>
+              <h4>LinkedIn</h4>
+              <p>
+                <a href="https://za.linkedin.com/in/kiara-naidoo-626746286" target="_blank" rel="noopener noreferrer">Kiara Naidoo</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-form-wrapper shadow-dark">
+            <h3>Send Me a Message</h3>
+            <p class="form-intro">Fill out the form below and your message will be prepared immediately.</p>
+
+            <form id="contactForm" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="senderName">Your Name *</label>
+                  <input type="text" id="senderName" name="name" class="form-control" placeholder="e.g. Alex Pillay" required>
+                </div>
+                <div class="form-group">
+                  <label for="senderEmail">Your Email *</label>
+                  <input type="email" id="senderEmail" name="email" class="form-control" placeholder="e.g. alex@company.com" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="serviceSelect">Service / Inquiry Type</label>
+                  <select id="serviceSelect" name="service" class="form-control">
+                    <option value="General Inquiry">General Inquiry / Opportunity</option>
+                    <option value="Full-Stack Web Development">Full-Stack Web Development</option>
+                    <option value="Web Design">Front-End Web Design</option>
+                    <option value="Database Design">SQL Database Design</option>
+                    <option value="Video Editing">Video Editing</option>
+                    <option value="Logo & Graphic Design">Logo &amp; Graphic Design</option>
+                    <option value="TEFL Tutoring">TEFL English Tutoring</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="subjectInput">Subject *</label>
+                  <input type="text" id="subjectInput" name="subject" class="form-control" placeholder="Project or role details" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="messageInput">Message *</label>
+                <textarea id="messageInput" name="message" class="form-control" rows="5" placeholder="Tell me about your project, timeline, or question..." required></textarea>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary">
+                  <i class="fa fa-paper-plane"></i> Send Message
+                </button>
+                <span class="form-status" id="formStatus"></span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+
+
+  <!-- Live Theme & Color Switcher -->
+  <div class="style-switcher" id="styleSwitcher">
+    <button type="button" class="toggle-style-switcher" id="toggleStyleSwitcher" aria-label="Customize Theme">
+      <i class="fa fa-cog fa-spin"></i>
+    </button>
+    <h5>Accent Color</h5>
+    <ul class="color-list">
+      <li><button type="button" class="color-btn active" data-color="pink" style="background-color: #ec1839;" title="Crimson Rose"></button></li>
+      <li><button type="button" class="color-btn" data-color="blue" style="background-color: #2196f3;" title="Electric Blue"></button></li>
+      <li><button type="button" class="color-btn" data-color="green" style="background-color: #28a745;" title="Emerald"></button></li>
+      <li><button type="button" class="color-btn" data-color="orange" style="background-color: #fa5b0f;" title="Sunset Orange"></button></li>
+      <li><button type="button" class="color-btn" data-color="yellow" style="background-color: #e09f00;" title="Amber Gold"></button></li>
+    </ul>
+    <h5>Appearance Mode</h5>
+    <div class="theme-toggle-group">
+      <label class="theme-radio">
+        <input type="radio" name="body-skin" value="light" checked> <span><i class="fa fa-sun-o"></i> Light</span>
+      </label>
+      <label class="theme-radio">
+        <input type="radio" name="body-skin" value="dark"> <span><i class="fa fa-moon-o"></i> Dark</span>
+      </label>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast"></div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
